@@ -7,7 +7,8 @@ public class InformationScreenManager : MonoBehaviour
     public Text titleText;
     public Text aboutEnemyText;
     public Text aboutText;
-    public Text aboutTurretText;
+    public Text aboutTurretText1;
+    public Text aboutTurretText2;
     public Image enemyImage;
     public Image towerImage;
     public Button continueButton;
@@ -125,7 +126,8 @@ public class InformationScreenManager : MonoBehaviour
         titleText.text = informationPanel.title;
         aboutEnemyText.text = informationPanel.enemy;
         aboutText.text = informationPanel.about;
-        aboutTurretText.text = informationPanel.turret;
+        aboutTurretText1.text = informationPanel.turret1;
+        aboutTurretText2.text = informationPanel.turret2;
         enemyImage.sprite = informationPanel.enemySprite;
         towerImage.sprite = informationPanel.turretSprite;
         

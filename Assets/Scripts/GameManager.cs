@@ -18,11 +18,6 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            EndGame();
-        }
         
         if (PlayerStats.Lives <= 0)
         {

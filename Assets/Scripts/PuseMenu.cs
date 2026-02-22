@@ -10,7 +10,7 @@ public class PuseMenu : MonoBehaviour
     public SceneFader sceneFader;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.P) ||  Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePauseMenu();
         }

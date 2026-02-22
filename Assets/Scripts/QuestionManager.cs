@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class QuestionManager : MonoBehaviour
 {
     public GameObject ui;
-    public GameObject correctUi;
-    public GameObject wrongUi;
     public Text questionText;
     public Text answerAText;
     public Text answerBText;
@@ -38,7 +36,7 @@ public class QuestionManager : MonoBehaviour
     private static bool _suspiciousDownload;
     private bool _suspiciousDownload2;
     private bool _suspiciousDownload3;
-
+    
     void Awake()
     {
         _fakePopUp = false;
@@ -162,92 +160,120 @@ public class QuestionManager : MonoBehaviour
         }
     }
     
-    private IEnumerator ShowFeedback(GameObject feedbackUI)
+    private IEnumerator ShowFeedback()
     {
         yield return new WaitForSecondsRealtime(5);
         ui.SetActive(false);
         WaveSpawner.ResetCountdown();
         WaveSpawner.SetActive();
-        feedbackUI.SetActive(false);
+    }
+    
+    private void DisableAllButtons()
+    {
+        answerA.onClick.RemoveAllListeners();
+        answerB.onClick.RemoveAllListeners();
+        answerC.onClick.RemoveAllListeners();
+        answerD.onClick.RemoveAllListeners();
     }
 
     private void WrongAnswer()
     {
-        wrongUi.SetActive(true);
-        StartCoroutine(ShowFeedback(wrongUi));
+        DisableAllButtons();
+        
+        questionText.color = Color.red;
+        questionText.text = "WRONG ANSWER!";
+        
+        StartCoroutine(ShowFeedback());
     }
+    
 
     private void CorrectAnswer()
     {
-        correctUi.SetActive(true);
-        StartCoroutine(ShowFeedback(correctUi));
+        DisableAllButtons();
+        
+        questionText.color = Color.green;
+
         if (_fakePopUp2)
         {
+            questionText.text = "CORRECT ANSWER!\nYou unlocked the Fake Pop Up Turret!";
             Shop.UnlockFakePopUpTurret();
         }
 
         if (_fakeWebsite2)
         {
+            questionText.text = "CORRECT ANSWER!\nYou unlocked the Fake Website Turret!";
             Shop.UnlockFakeWebsiteTurret();
         }
 
         if (_oversharingQuiz2)
         {
+            questionText.text = "CORRECT ANSWER!\nYou unlocked the Oversharing Quiz Turret!";
             Shop.UnlockOversharingQuizTurret();
         }
 
         if (_phishingEmail2)
         {
+            questionText.text = "CORRECT ANSWER!\nYou unlocked the Phishing Email Turret!";
             Shop.UnlockPhishingEmailTurret();
         }
 
         if (_suspiciousDownload2)
         {
+            questionText.text = "CORRECT ANSWER!\nYou unlocked the Suspicious Download Turret!";
             Shop.UnlockSuspiciousDownloadTurret();
         }
+        
+        StartCoroutine(ShowFeedback());
     }
     
     private void CorrectAnswer2()
     {
-        correctUi.SetActive(true);
-        StartCoroutine(ShowFeedback(correctUi));
+        DisableAllButtons();
+        
+        questionText.color = Color.green;
+
         if (_fakePopUp3)
         {
+            questionText.text = "CORRECT ANSWER!\nYou gained 100$!";
             _fakePopUp3 = false;
             PlayerStats.Money += 100;
         }
 
         if (_fakeWebsite3)
         {
+            questionText.text = "CORRECT ANSWER!\nYou gained 150$!";
             _fakeWebsite3 = false;
             PlayerStats.Money += 150;
         }
 
         if (_oversharingQuiz3)
         {
+            questionText.text = "CORRECT ANSWER!\nYou gained 200$!";
             _oversharingQuiz3 = false;
             PlayerStats.Money += 200;
         }
 
         if (_phishingEmail3)
         {
+            questionText.text = "CORRECT ANSWER!\nYou gained 250$!";
             _phishingEmail3 = false;
             PlayerStats.Money += 250;
         }
 
         if (_suspiciousDownload3)
         {
+            questionText.text = "CORRECT ANSWER!\nYou gained 300$!";
             _suspiciousDownload3 = false;
             PlayerStats.Money += 300;
         }
+        
+        StartCoroutine(ShowFeedback());
     }
     
     void SetUpQuestion(List<Question> questions, bool main)
     {
-        answerA.onClick.RemoveAllListeners();
-        answerB.onClick.RemoveAllListeners();
-        answerC.onClick.RemoveAllListeners();
-        answerD.onClick.RemoveAllListeners();
+        DisableAllButtons();
+        
         _selectedQuestion = null;
             
         _selectedQuestion = questions[Random.Range(0, questions.Count)];
@@ -257,6 +283,8 @@ public class QuestionManager : MonoBehaviour
         answerBText.text = _selectedQuestion.answerB;
         answerCText.text = _selectedQuestion.answerC;
         answerDText.text = _selectedQuestion.answerD;
+        
+        questionText.color = Color.white;
             
         if (_selectedQuestion.correctAnswer == _selectedQuestion.answerA)
         {

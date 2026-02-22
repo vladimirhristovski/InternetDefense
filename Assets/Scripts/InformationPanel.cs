@@ -13,7 +13,10 @@ public class InformationPanel
     public string about;
     
     [TextArea(3, 10)]
-    public string turret;
+    public string turret1;
+    
+    [TextArea(3, 10)]
+    public string turret2;
     
     public Sprite enemySprite;
     public Sprite turretSprite;
