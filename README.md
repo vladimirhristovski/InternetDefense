@@ -2,6 +2,9 @@
 
 [![Unity](https://img.shields.io/badge/Engine-Unity-black?logo=unity)]()
 [![C#](https://img.shields.io/badge/Language-C%23-purple?logo=csharp)]()
+[![Platform](https://img.shields.io/badge/Platform-WebGL-blue)]()
+[![Age](https://img.shields.io/badge/Age-10--13-green)]()
+[![Status](https://img.shields.io/badge/Status-Finished-brightgreen)]()
 
 ---
 
@@ -12,17 +15,19 @@
 
 ---
 
-## 🎮 Play the Game / Играј ја играта
+## 🎮 Play the Game
 
 🔗 itch.io page:  
 https://vladimirhristovski.itch.io/internet-defense
 
 ---
 
-## ⬇️ Download WebGL Build
+## ⬇️ Download / Executable Version
 
-🔗 Google Drive:  
+🔗 Google Drive (WebGL Build):  
 https://drive.google.com/file/d/1hGXVaRP8t_3zBtRfUWId_DrcNXtiIchA/view?usp=sharing
+
+This version contains the WebGL (Web Assembly) build that can be hosted online or uploaded to itch.io.
 
 ---
 
@@ -36,27 +41,45 @@ https://drive.google.com/file/d/1hGXVaRP8t_3zBtRfUWId_DrcNXtiIchA/view?usp=shari
 
 ## 📖 Description
 
-**Internet Defense** is an educational tower defense game designed to teach players how to recognize and defend against common internet threats.
+**Internet Defense** is an educational tower defense game designed to teach children how to recognize and defend against common internet threats.
 
-The game combines educational elements with tower defense mechanics, using informational panels and quiz questions to help players learn while playing.
+The game combines learning with interactive gameplay using informational panels, quizzes, and defensive mechanics.
 
 ---
 
 ## 🎯 Objective
 
-The objective is to survive all **10 waves**.
+Survive all **10 waves**.
 
-- Waves 1–5 → Learning waves
-- Waves 6–10 → Challenge waves
+- Waves 1–5 → Learning waves  
+- Waves 6–10 → Challenge waves  
 
-If the player survives all waves → Win Screen appears  
-If the player loses → Lose Screen appears  
+If the player survives all waves → Win Screen  
+If the player loses → Lose Screen  
+
+---
+
+## 👥 Target Audience
+
+Designed primarily for:
+
+- Children aged **10–13**
+- Upper primary school students
+- Teachers introducing basic cybersecurity
+- Parents teaching safe internet usage
+
+The game is age-appropriate, non-violent, and focused on digital safety awareness.
+
+---
+
+## 🔞 Age Rating
+
+Recommended Age: **10–13 years**  
+No violence or inappropriate content.
 
 ---
 
 ## ⚠️ Threat Types
-
-The game includes 5 types of internet threats:
 
 1. Fake Pop-up  
 2. Fake Website  
@@ -68,10 +91,10 @@ The game includes 5 types of internet threats:
 
 ## 🔫 Turrets
 
-Each turret counters a specific threat:
+Each turret counters one specific threat:
 
 | Turret | Cost |
-|------|------|
+|--------|------|
 | Fake Pop-up Turret | 50$ |
 | Fake Website Turret | 100$ |
 | Oversharing Quiz Turret | 150$ |
@@ -85,40 +108,33 @@ Selling a turret refunds **50% of its cost**.
 ## 💰 Economy System
 
 - Enemy kill reward → 25$
-- Questions provide additional rewards
+- Questions reward additional money
 - Turrets cost money to build
-- Selling turrets returns half of their cost
+- Selling turrets returns half cost
 
 ---
 
 ## 🧠 Learning System (Waves 1–5)
 
-Each learning wave contains:
+Each learning wave includes:
 
 ### Informational Panel
 
-Displays:
-
-- Information about the threat
+Explains:
+- What the threat is
 - How to defend against it
 
-Pressing Continue opens a question.
-
----
+Pressing **Continue** opens a question.
 
 ### Question System
 
-Each question has:
-
 - 4 possible answers
-- Only 1 correct answer
+- 1 correct answer
 
 First question:
-
 - Unlocks the turret for that threat
 
 Second question:
-
 - Appears after killing 2 enemies
 - Rewards money equal to next turret cost
 
@@ -126,16 +142,14 @@ Second question:
 
 ## 👾 Enemy System
 
-Waves 1–5:
+### Waves 1–5
+- Only one threat type per wave
+- 3 enemies per wave
+- No mixing
 
-- Only one enemy type per wave
-- 3 enemies spawn per wave
-- Threat types do not mix
-
-Waves 6–10:
-
-- Enemies spawn randomly
-- Enemy count increases
+### Waves 6–10
+- Random enemy spawning
+- Increasing difficulty
 - No informational panels
 - No questions
 
@@ -145,50 +159,31 @@ Waves 6–10:
 
 ### Pause Menu
 
-Activated by pressing:
-
+Activated by:
 - P
 - Escape
 - Space
 
 Options:
-
 - Continue
 - Retry
 - Menu
 
----
-
 ### Win Screen
-
-Displayed after surviving all 10 waves.
-
-Options:
-
 - Exit
 - Menu
 
----
-
 ### Lose Screen
-
-Displayed when player loses.
-
-Shows:
-
-- Number of waves survived
-
-Options:
-
 - Retry
 - Menu
+- Shows waves survived
 
 ---
 
 ## 🎮 Controls
 
 | Key | Action |
-|----|--------|
+|------|--------|
 | Mouse | Place turret / interact |
 | P | Pause |
 | Escape | Pause |
@@ -202,7 +197,7 @@ Options:
 - Enemy spawning system
 - Turret placement system
 - Turret selling system
-- Question and answer system
+- Question & answer system
 - Informational panel system
 - Economy system
 - Pause system
@@ -212,23 +207,23 @@ Options:
 
 ## 🎓 Educational Purpose
 
-This game helps players learn to recognize and defend against:
+The game teaches players to recognize:
 
-- Phishing emails
-- Fake websites
-- Fake popups
-- Malicious downloads
-- Oversharing personal information
+- Phishing emails  
+- Fake websites  
+- Fake popups  
+- Suspicious downloads  
+- Oversharing personal information  
 
 ---
 
 ## 🛠 Technologies Used
 
-- Unity Engine
-- C#
-- WebGL
-- itch.io
-- GitHub
+- Unity Engine  
+- C#  
+- WebGL  
+- itch.io  
+- GitHub  
 
 ---
 
@@ -236,27 +231,45 @@ This game helps players learn to recognize and defend against:
 
 ## 📖 Опис
 
-**Internet Defense** е едукативна tower defense игра која ги учи играчите како да препознаваат и да се заштитат од интернет закани.
+**Internet Defense** е едукативна tower defense игра која ги учи децата како да препознаваат и да се заштитат од интернет закани.
 
-Играта комбинира едукативни елементи со gameplay преку информативни панели, прашања и defense механики.
+Играта комбинира учење со интерактивен gameplay преку информативни панели и прашања.
 
 ---
 
 ## 🎯 Цел на играта
 
-Целта е да се преживеат сите **10 бранови**.
+Преживеј ги сите **10 бранови**.
 
-- Waves 1–5 → Едукативни бранови
-- Waves 6–10 → Предизвикувачки бранови
+- Waves 1–5 → Едукативни бранови  
+- Waves 6–10 → Предизвикувачки бранови  
 
-Ако ги преживеете сите → Win Screen  
-Ако изгубите → Lose Screen  
+Ако преживееш → Win Screen  
+Ако изгубиш → Lose Screen  
+
+---
+
+## 👥 Целна публика
+
+Наменета за:
+
+- Деца на возраст од **10–13 години**
+- Ученици од основно образование
+- Наставници по информатика
+- Родители кои сакаат да ги научат децата за безбедност на интернет
+
+Играта е соодветна за возраста и без несоодветна содржина.
+
+---
+
+## 🔞 Возрасна категорија
+
+Препорачана возраст: **10–13 години**  
+Без насилство и несоодветна содржина.
 
 ---
 
 ## ⚠️ Типови на закани
-
-Играта содржи:
 
 1. Fake Pop-up  
 2. Fake Website  
@@ -268,9 +281,7 @@ This game helps players learn to recognize and defend against:
 
 ## 🔫 Кули
 
-Секоја кула е наменета за една закана:
-
-| Turret | Цена |
+| Кула | Цена |
 |------|------|
 | Fake Pop-up Turret | 50$ |
 | Fake Website Turret | 100$ |
@@ -285,9 +296,9 @@ Selling turret враќа **50% од цената**.
 ## 💰 Economy систем
 
 - Уништување непријател → 25$
-- Прашањата даваат дополнителни пари
+- Прашањата даваат пари
 - Кулите чинат пари
-- Selling turret враќа половина цена
+- Selling враќа половина цена
 
 ---
 
@@ -296,29 +307,20 @@ Selling turret враќа **50% од цената**.
 Секој wave има:
 
 ### Информативен панел
-
-Прикажува:
-
-- Информации за заканата
+Објаснува:
+- Што е заканата
 - Како да се заштитиме
 
 Continue → прашање
 
----
-
 ### Прашања
-
-Секое прашање има:
-
 - 4 одговори
 - 1 точен одговор
 
 Прво прашање:
-
 - Отклучува кула
 
 Второ прашање:
-
 - Се појавува после 2 уништени непријатели
 - Дава пари
 
@@ -326,14 +328,12 @@ Continue → прашање
 
 ## 👾 Enemy систем
 
-Waves 1–5:
-
+### Waves 1–5
 - Само еден тип на непријател
-- 3 непријатели по wave
+- 3 непријатели
 - Без мешање
 
-Waves 6–10:
-
+### Waves 6–10
 - Random spawning
 - Повеќе непријатели
 - Без прашања
@@ -344,33 +344,23 @@ Waves 6–10:
 ## 🧾 Менија
 
 Pause Menu:
-
-Се активира со:
-
 - P
 - Escape
 - Space
 
 Опции:
-
 - Continue
 - Retry
 - Menu
 
----
-
 Win Screen:
-
 - Exit
 - Menu
 
----
-
 Lose Screen:
-
 - Retry
 - Menu
-- Прикажува преживеани wave-ови
+- Прикажува преживеани бранови
 
 ---
 
@@ -385,38 +375,12 @@ Lose Screen:
 
 ---
 
-## 🧩 Имплементирани системи
-
-- Wave систем
-- Enemy spawning систем
-- Turret систем
-- Selling систем
-- Question систем
-- Informational panel систем
-- Economy систем
-- Pause систем
-- Win/Lose систем
-
----
-
-## 🎓 Едукативна цел
-
-Играта ги учи играчите да препознаваат:
-
-- Phishing
-- Fake websites
-- Fake popups
-- Malicious downloads
-- Oversharing ризици
-
----
-
 ## 🛠 Технологии
 
-- Unity Engine
-- C#
-- WebGL
-- itch.io
-- GitHub
+- Unity Engine  
+- C#  
+- WebGL  
+- itch.io  
+- GitHub  
 
 ---
