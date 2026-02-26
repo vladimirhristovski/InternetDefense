@@ -25,7 +25,7 @@ https://vladimirhristovski.itch.io/internet-defense
 ## ⬇️ Download / Executable Version
 
 🔗 Google Drive (WebGL Build):  
-https://drive.google.com/file/d/1hGXVaRP8t_3zBtRfUWId_DrcNXtiIchA/view?usp=sharing
+https://drive.google.com/file/d/1cGGZ0QwVsRbT1FQGz136NVNW01juhykT/view?usp=sharing
 
 This version contains the WebGL (Web Assembly) build that can be hosted online or uploaded to itch.io.
 
@@ -33,7 +33,7 @@ This version contains the WebGL (Web Assembly) build that can be hosted online o
 
 ## 🎥 Gameplay Video
 
-[![Watch Gameplay](https://img.youtube.com/vi/4MkvgmVS4X4/maxresdefault.jpg)](https://youtu.be/4MkvgmVS4X4)
+[![Watch Gameplay](https://img.youtube.com/vi/4e-peoHlN9M/maxresdefault.jpg)](https://youtu.be/4e-peoHlN9M)
 
 ---
 
