@@ -2890,7 +2890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2392157, g: 0.2392157, b: 0.2392157, a: 1}
+  m_Color: {r: 0.21960784, g: 0.06666667, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3649,7 +3649,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 370}
-  m_SizeDelta: {x: -640, y: -800}
+  m_SizeDelta: {x: -500, y: -800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &408365458
 CanvasRenderer:
@@ -3913,7 +3913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2392157, g: 0.2392157, b: 0.2392157, a: 1}
+  m_Color: {r: 0.21960784, g: 0.06666667, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6283,7 +6283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_Color: {r: 0.21960784, g: 0.06666667, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8913,8 +8913,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 165, y: 0}
-  m_SizeDelta: {x: -370, y: -40}
+  m_AnchoredPosition: {x: 160, y: 0}
+  m_SizeDelta: {x: -360, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076370100
 MonoBehaviour:
@@ -8949,7 +8949,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THREAT DETECTED: Fake Pop-Ups'
+  m_Text: 'HOW THEY ATTACK:
+
+    - Claim you need special tools
+
+    - Offer "free"
+    versions of paid software
+
+    - Pretend to be urgent security updates
+
+    -
+    Hide viruses inside game files'
 --- !u!222 &1076370101
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13577,8 +13587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5}
-  m_SizeDelta: {x: -40, y: -10}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578644042
 MonoBehaviour:
@@ -13602,7 +13612,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fbe3c09b43ce4304e86e7496c81bb9ed, type: 3}
-    m_FontSize: 60
+    m_FontSize: 57
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -13613,7 +13623,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THREAT DETECTED: Fake Pop-Ups'
+  m_Text: 'THREAT DETECTED: Suspicious Downloads'
 --- !u!222 &1578644043
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16973,12 +16983,12 @@ MonoBehaviour:
       - Use URLs with tiny spelling mistakes
 
       -
-      Replace letters with numbers (amaz0n.com)
+      Replace letters with numbers
 
-      - Add extra words or dots
-      to addresses
+      - Add extra words or dots to addresses
 
-      - Copy designs of trusted websites'
+      -
+      Copy designs of trusted websites'
     about: 'WHAT ARE THEY?
 
       Websites that look almost identical to real ones
@@ -16997,15 +17007,12 @@ MonoBehaviour:
     title: 'THREAT DETECTED: Oversharing Quizzes'
     enemy: 'HOW THEY ATTACK:
 
-      - Ask for pet names, street names, birthdays
+      - Ask for pet names or birthdays
 
-      -
-      Request security question answers
+      - Request
+      security question answers
 
-      - Promise fun results like "superhero
-      names"
-
-      - Share your answers with criminals'
+      - Promise fun results like "superhero names"'
     about: 'WHAT ARE THEY?
 
       Fun-looking quizzes that ask personal questions
@@ -17024,15 +17031,13 @@ MonoBehaviour:
     title: 'THREAT DETECTED: Phishing Emails'
     enemy: 'HOW THEY ATTACK:
 
-      - Create fake urgency ("Account will close!")
+      - Use email addresses that look almost real
 
       -
-      Use email addresses that look almost real
+      Include links to fake login pages
 
-      - Include links to fake login
-      pages
-
-      - Contain spelling errors and bad grammar'
+      - Contain spelling errors and bad
+      grammar'
     about: 'WHAT ARE THEY?
 
       Emails pretending to be from companies you trust
@@ -17051,15 +17056,15 @@ MonoBehaviour:
     title: 'THREAT DETECTED: Suspicious Downloads'
     enemy: 'HOW THEY ATTACK:
 
-      - Claim you need special players for videos
+      - Claim you need special tools
+
+      - Offer
+      "free" versions of paid software
+
+      - Pretend to be urgent security updates
 
       -
-      Offer "free" versions of paid software
-
-      - Pretend to be urgent security
-      updates
-
-      - Hide viruses inside game files'
+      Hide viruses inside game files'
     about: 'WHAT ARE THEY?
 
       Files or programs containing viruses and malware,
@@ -17802,7 +17807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_Color: {r: 0.21960784, g: 0.06666667, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
