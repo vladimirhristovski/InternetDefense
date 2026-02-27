@@ -20,6 +20,9 @@
 🔗 itch.io page:  
 https://vladimirhristovski.itch.io/internet-defense
 
+🔗 GitHub page:           
+https://vladimirhristovski.github.io/InternetDefense/
+
 ---
 
 ## ⬇️ Download / Executable Version
